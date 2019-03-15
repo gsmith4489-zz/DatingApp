@@ -12,9 +12,9 @@ namespace DatingApp.API.Controllers
     // so the part after api/  -- the values key word is used to route to
     // to what has values and then the word controller - this is convention based
 
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ValuesController : ControllerBase
+    [Route("api/[controller]")] // attribute
+    [ApiController] // attribute - enfources attribute routing
+    public class ValuesController : ControllerBase  // Controller vs ControllerBASE - Base does not support view
     {
         private readonly DataContext _context;
         
